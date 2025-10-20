@@ -14,3 +14,8 @@ def hello_template(request):
         'welcome': '欢迎使用Django模板系统'
     }
     return render(request, 'hello/hello.html', context)
+
+
+def single_page(request):
+    """单页应用视图"""
+    return render(request, 'single_page.html')
